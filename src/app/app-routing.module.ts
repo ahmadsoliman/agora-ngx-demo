@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoggedInGuard } from './core';
 import { LoginComponent } from './main/account/login/login.component';
+import { CallComponent } from './main/call/call.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { MainLayoutComponent } from './main/layout/main-layout/main-layout.component';
 import { CallbackComponent } from './shared';
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent,
+      },
+      {
+        path: 'call',
+        component: CallComponent,
       },
     ],
   },

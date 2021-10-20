@@ -12,9 +12,10 @@ import { LayoutModule } from './layout/layout.module';
 import { ProfileComponent } from './account/profile/profile.component';
 import { SettingsComponent } from './account/settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CallComponent } from './call/call.component';
 
 @NgModule({
-  declarations: [LoginComponent, ProfileComponent, SettingsComponent, DashboardComponent],
+  declarations: [LoginComponent, ProfileComponent, SettingsComponent, DashboardComponent, CallComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
