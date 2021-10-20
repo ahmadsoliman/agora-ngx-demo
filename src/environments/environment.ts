@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  version: 'V1.00',
+  production: false,
+  server: 'https://cceportalapidev.azurewebsites.net/',
+  apiUrl: 'api/',
 };
 
 /*

@@ -1,0 +1,449 @@
+<!-- <header class="top-header">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="navbar">
+          <a class="navbar__brand" href="#!">
+            <img src="assets/img/logo.png" alt="EzyMed's Logo">
+          </a>
+
+          <main-navigation class="u-mr-auto"></main-navigation>
+
+          <div class="dropdown dropdown  u-ml-small u-hidden-down@mobile">
+            <a class="notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="notification__icon">
+                <i class="fa fa-bell-o"></i>
+              </span>
+              <span class="notification__number">3</span>
+            </a>
+
+            <div class="dropdown__menu dropdown__menu--large dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAlerts">
+              <a href="#" class="dropdown__item dropdown-item o-media">
+                <span class="o-media__img u-mr-xsmall">
+                  <span class="avatar avatar--xsmall">
+                    <span class="avatar__img u-bg-success u-flex u-justify-center u-align-items-center">
+                      <i class="fa fa-check u-text-large u-color-white"></i>
+                    </span>
+                  </span>
+
+                </span>
+                <div class="o-media__body">
+                  <h6 class="u-mb-zero">Task assigned</h6>
+                  <p class="u-text-mute">Jeremy has assigned task to you in SmartAsset</p>
+                </div>
+              </a>
+
+              <a href="#" class="dropdown__item dropdown-item o-media">
+                <span class="o-media__img u-mr-xsmall">
+                  <span class="avatar avatar--xsmall">
+                    <span class="avatar__img u-bg-fancy u-flex u-justify-center u-align-items-center">
+                      <i class="fa fa-calendar u-text-large u-color-white"></i>
+                    </span>
+                  </span>
+
+                </span>
+                <div class="o-media__body">
+                  <h6 class="u-mb-zero">Company meetup</h6>
+                  <p class="u-text-mute">You have recieved a mention on DD, check it out!</p>
+                </div>
+              </a>
+              <a href="#" class="dropdown__item dropdown-item o-media">
+                <span class="o-media__img u-mr-xsmall">
+                  <span class="avatar avatar--xsmall">
+                    <span class="avatar__img u-bg-primary u-flex u-justify-center u-align-items-center">
+                      <i class="fa fa-info u-text-large u-color-white"></i>
+                    </span>
+                  </span>
+
+                </span>
+                <div class="o-media__body">
+                  <h6 class="u-mb-zero">Yousry mentioned you</h6>
+                  <p class="u-text-mute">Yousry Mentioned you on a comment in SMartAsset</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown" dropdown>
+            <a dropdownToggle role="button" class="avatar avatar--xsmall has-dropdown dropdown-toggle u-hidden-down@mobile" id="dropdwonMenuAvatar"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="avatar__img u-mr-xsmall" src="assets/img/team/jeremy.jpg" alt="User's Profile Picture">
+              Jeremy
+            </a>
+            <div *dropdownMenu class="dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
+              <a class="dropdown__item dropdown-item" href="my-profile-owner.html">Edit Profile</a>
+              <a class="dropdown__item dropdown-item" href="settings.html">Account Settings</a>
+              <a class="dropdown__item dropdown-item" href="subscription.html">Account subscription</a>
+
+              <a class="dropdown__item dropdown-item" (click)="auth.logout()">Logout</a>
+            </div>
+          </div>
+
+          <a href="#" class="toggle-mnu hidden-lg" id="main-nav-toggle-button">
+            <span></span>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+<header class="navbar">
+  <button class="sidebar-toggle">
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+    <span class="toggle-bar"></span>
+  </button>
+
+  <a class="navbar__logo mr-small top-nav-logo hidden-down@mobile" href="#!">
+    <img src="assets/img/logo.png" />
+  </a>
+
+  <!-- <main-navigation></main-navigation> -->
+  <!-- <app-nav-bar [navItems]="navItems"></app-nav-bar> -->
+
+  <h2 class="navbar-title mr-auto"></h2>
+
+  <div class="dropdown mr-medium ml-small hidden-down@mobile" dropdown>
+    <a
+      class="notification dropdown-toggle"
+      dropdownToggle
+      id="dropdownMenuAlerts"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <span class="notification__icon">
+        <i class="fa fa-bell-o"></i>
+      </span>
+      <span class="notification__number">3</span>
+    </a>
+
+    <div
+      class="
+        dropdown-menu dropdown-menu--large
+        dropdown-menu dropdown-container dropdown-menu-right
+      "
+      *dropdownMenu
+      aria-labelledby="dropdownMenuAlerts"
+    >
+      <div class="card__header card__header--transparent line p-small">
+        <h5 class="card__title">Notification</h5>
+        <a class="card__meta" href="#">View all</a>
+      </div>
+      <div class="dropdown-container__body">
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-success
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-check text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">Well done</h6>
+            <p class="text-mute">Lorem ipsum dolor sit .</p>
+          </div>
+        </a>
+
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-fancy
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-calendar text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">TD Meeting</h6>
+            <p class="text-mute">consectetur adipisicing elit. Velit dolorum</p>
+          </div>
+        </a>
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-primary
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-info text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">New task assinged</h6>
+            <p class="text-mute">Velit dolorum dignissimos omnis offici</p>
+          </div>
+        </a>
+
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-success
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-check text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">Well done</h6>
+            <p class="text-mute">Lorem ipsum dolor sit .</p>
+          </div>
+        </a>
+
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-fancy
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-calendar text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">TD Meeting</h6>
+            <p class="text-mute">consectetur adipisicing elit. Velit dolorum</p>
+          </div>
+        </a>
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-primary
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-info text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">New task assinged</h6>
+            <p class="text-mute">Velit dolorum dignissimos omnis offici</p>
+          </div>
+        </a>
+
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-success
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-check text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">Well done</h6>
+            <p class="text-mute">Lorem ipsum dolor sit .</p>
+          </div>
+        </a>
+        <a href="#" class="dropdown-item media">
+          <span class="media__img mr-xsmall">
+            <span class="avatar avatar--xsmall">
+              <span
+                class="
+                  avatar__img
+                  bg-primary
+                  display--flex
+                  justify-center
+                  align-items-center
+                "
+              >
+                <i class="fa fa-info text-large color-white"></i>
+              </span>
+            </span>
+          </span>
+          <div class="media__body">
+            <h6 class="mb-zero">New task assinged</h6>
+            <p class="text-mute">Velit dolorum dignissimos omnis offici</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown" dropdown>
+    <a
+      class="avatar avatar--xsmall has-dropdown -toggle"
+      dropdownToggle
+      id="dropdwonMenu"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <img class="avatar__img" src="assets/img/avatar-sm.jpg" />
+    </a>
+
+    <div
+      class="dropdown-menu dropdown-menu-right"
+      *dropdownMenu
+      aria-labelledby="dropdwonMenu"
+    >
+      <a class="dropdown-item" routerLink="/profile">Edit Profile</a>
+      <a class="dropdown-item" routerLink="/account-settings"
+        >Account Settings</a
+      >
+      <a class="dropdown-item" (click)="auth.logout()">Logout</a>
+    </div>
+  </div>
+  <span
+    class="notification__icon slide-panel-btn button"
+    id="panel-settings-btn"
+    (click)="openSettings()"
+  >
+    <i class="fa fa-cog"></i>
+  </span>
+  <span
+    (click)="openApps()"
+    class="
+      notification__icon
+      slide-panel-btn
+      open-side-panel-btn
+      ml-zero
+      hidden-down@mobile
+    "
+    id="panel-switcher-btn"
+  >
+    <i class="fa fa-th-large"></i>
+  </span>
+</header>
+
+<!-- <side-panel
+  title="Settings"
+  [isOpen]="showSettings"
+  (closed)="closed($event)"
+  (saved)="saved($event)"
+>
+  <h6 class="text-bold">Layout</h6>
+
+  <div class="line pv-small border-bottom">
+    <p>Side Menu</p>
+    <div class="switch" id="side-bar-btn">
+      <input class="switch__input" type="checkbox" id="side-bar-btn-input" />
+    </div>
+  </div>
+
+  <div class="line pv-small border-bottom">
+    <p>Top Nav</p>
+    <div class="switch" id="top-nav-btn">
+      <input
+        class="switch__input"
+        type="checkbox"
+        id="top-nav-btn-input"
+        checked
+      />
+    </div>
+  </div>
+
+  <div class="line pt-small">
+    <p>Top Nav Logo</p>
+    <div class="switch" id="top-logo-btn">
+      <input
+        class="switch__input"
+        type="checkbox"
+        id="top-logo-btn-input"
+        checked
+      />
+    </div>
+  </div>
+
+  <h6 class="text-bold mt-large">Look and Feel</h6>
+
+  <div class="row p-small">
+    <div class="col-md-6 p-zero">
+      <h6 class="">Theme</h6>
+      <div class="toggle mb-small">
+        <div class="radio-toggle is-active" id="colored-theme-btn-0">
+          <label class="radio-toggle__label" for="toggle1">
+            <input
+              class="radio-toggle__input"
+              id="toggle1"
+              name="toggles"
+              type="radio"
+            />
+            Colored
+          </label>
+        </div>
+
+        <div class="radio-toggle" id="dark-theme-btn-0">
+          <label class="radio-toggle__label" for="toggle2">
+            <input
+              class="radio-toggle__input"
+              id="toggle2"
+              name="toggles"
+              type="radio"
+            />
+            Dark
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 p-zero pl-medium" id="color-boxes">
+      <h6 class="">Look and Feel</h6>
+      <ul class="mt-small">
+        <li
+          class="color-box gray tooltip tooltip--top selected"
+          aria-label="Gray"
+        ></li>
+        <li class="color-box pink tooltip tooltip--top" aria-label="Pink"></li>
+        <li class="color-box blue tooltip tooltip--top" aria-label="Blue"></li>
+        <li
+          class="color-box yellow tooltip tooltip--top"
+          aria-label="Yellow"
+        ></li>
+        <li
+          class="color-box biolet tooltip tooltip--top"
+          aria-label="Biolet"
+        ></li>
+      </ul>
+    </div>
+  </div>
+</side-panel> -->

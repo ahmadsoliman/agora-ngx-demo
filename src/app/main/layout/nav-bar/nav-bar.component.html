@@ -1,0 +1,33 @@
+<!-- <ul class="main-navigation" [ngClass]="{'main-navigation': navItems[0] && navItems[0].level == 0}">
+  <li *ngFor="let item of navItems">
+    <a [routerLink]="item.path">{{ item.name }}</a>
+    <app-nav-bar *ngIf="item.items" [navItems]="item.items"></app-nav-bar>
+  </li>
+</ul> -->
+<ng-container></ng-container>
+
+<ng-template #recursiveMenu let-navItems>
+  <!-- <ul [className]="navItems && navItems[0] && navItems[0].level >0 ? 'flyout-content nav stacked' : 'nav site-nav'">
+    <ng-container *ngFor="let item of navItems">
+        <li [className]="item.level== 0 && item.items.length > 0 ? 'flyout' : item.items.length > 0? 'flyout-alt': ''">
+            <a [routerLink]="item.path">{{ item.name }}</a>
+            <ng-container  *ngTemplateOutlet="recursiveMenu; context:{ $implicit: item.items}" 
+              ></ng-container>
+          </li>
+    </ng-container>
+  </ul> -->
+  <ul [className]="navItems && navItems[0] && navItems[0].level >0 ? 'nav-dropdown' : 'nav__list'">
+      <ng-container *ngFor="let item of navItems">
+          <li class="nav__item">
+            <a [routerLink]="item.path">{{ item.name }}</a>
+            <ng-container  *ngTemplateOutlet="recursiveMenu; context:{ $implicit: item.items}" 
+              ></ng-container>
+          </li>
+      </ng-container>
+    </ul>
+</ng-template>
+
+<nav class="nav top-nav-menu mr-auto ml-small hidden-down@mobile">
+  <ng-container  *ngTemplateOutlet="recursiveMenu; context:{ $implicit: navItems}" 
+  ></ng-container>
+</nav>

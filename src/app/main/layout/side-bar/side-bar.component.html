@@ -1,0 +1,101 @@
+<div class="sidebar-container">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <a class="sidebar-logo" href="#">
+        <img class="sidebar-logo-img" src="assets/img/logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <div class="sidebar-content">
+      <h4 class="sidebar-title"> Apps </h4>
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/dashboard">
+            <i class="fa fa-home mr-xsmall"></i> Dashboard
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/blank">
+            <i class="fa fa-flag-checkered mr-xsmall"></i> Start Page
+          </a>
+        </li>
+
+      </ul>
+      <h4 class="sidebar-title"> Account </h4>
+      <ul class="sidebar-menu">
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/profile">
+            <i class="fa fa-street-view mr-xsmall"></i> Profile
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/account-settings">
+            <i class="fa fa-cog mr-xsmall"></i> Account Settings
+          </a>
+        </li>
+      </ul>
+      <h4 class="sidebar-title"> All Pages </h4>
+      <ul class="sidebar-menu">
+
+
+        <li class="menu-item has-submenu" dropdown>
+          <a class="menu-item__link" dropdownToggle aria-expanded="false" aria-controls="sidebar-submenu">
+            <i class="fa fa-list-alt mr-xsmall"></i> Projects pages
+          </a>
+          <ul class="sidebar__submenu collapse" id="sidebar-submenu" *dropdownMenu>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/grids">Projects Grid</a></li>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/projects-cards">Projects Cards</a></li>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/projects-board">Projects Board</a></li>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/project-details">Projects Details</a></li>
+
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/calendar">
+            <i class="fa fa-calendar mr-xsmall"></i> Calendar
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/ui-elements">
+            <i class="fa fa-mouse-pointer mr-xsmall"></i> UI Elements
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-item__link" routerLinkActive="is-active" routerLink="/cards">
+            <i class="fa fa-list-alt mr-xsmall"></i> Cards
+          </a>
+        </li>
+
+        <!-- <li class="menu-item has-submenu">
+          <a class="menu-item__link" data-toggle="collapse" href="#sidebar-submenu2" aria-expanded="false"
+            aria-controls="sidebar-submenu2">
+            <i class="fa fa-user-circle mr-xsmall"></i> Account pages
+          </a>
+          <ul class="sidebar__submenu collapse" id="sidebar-submenu2">
+            <li><a class="menu-item__link" href="account.html">Account</a></li>
+            <li><a class="menu-item__link" href="user-profile.html">Profile</a></li>
+            <li><a class="menu-item__link" href="login.html">Login</a></li>
+            <li><a class="menu-item__link" href="forgot-password.html">Forgot Password</a></li>
+            <li><a class="menu-item__link" href="register.html">Register</a></li>
+            <li><a class="menu-item__link" href="reset-password.html">Reset Password</a></li>
+          </ul>
+        </li> -->
+        
+        <li class="menu-item has-submenu" dropdown>
+          <a class="menu-item__link" dropdownToggle   aria-expanded="false"  aria-controls="sidebar-submenu3">
+            <i class="fa fa-files-o mr-xsmall"></i> Invoices
+          </a>
+          <ul class="sidebar__submenu collapse" id="sidebar-submenu3" *dropdownMenu>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/invoice-list">Invoice List</a></li>
+            <li><a class="menu-item__link" routerLinkActive="is-active" routerLink="/invoice-details">Invoice Details</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>

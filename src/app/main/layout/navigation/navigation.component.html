@@ -1,0 +1,36 @@
+<!-- <app-nav-bar [navItems]="navItems"></app-nav-bar> -->
+<!-- // Navigation items  -->
+
+<nav class="nav top-nav-menu mr-auto ml-small  hidden-down@mobile">
+  <ul class="nav__list">
+    
+    <li class="nav__item" *ngFor="let item of menuItemList">
+      <a class="nav__link" routerLinkActive="is-active" [routerLink]="item.path"> {{ item.name }} </a>
+    </li>
+    
+    <li class="nav__item">
+      <a class="nav__link">Dropdown</a>
+      <ul class="nav-dropdown">
+        <li>
+          <a href="#">Web Design</a>
+        </li>
+        <li>
+          <a href="#!">Web Development</a>
+        </li>
+        <li>
+          <a href="#!">Graphic Design</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav__item">
+      <div class="field field--inline has-icon-right hidden-up@tablet">
+        <span class="field__icon">
+          <i class="fa fa-search"></i>
+        </span>
+
+        <label class="hidden-visually">Seach</label>
+        <input class="input" id="navbar-search-small" type="text" placeholder="Search...">
+      </div>
+    </li>
+  </ul>
+</nav>
