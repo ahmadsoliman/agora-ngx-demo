@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { environment } from '@env/environment';
+import { NgxAgoraModule } from 'ngx-agora';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +26,8 @@ import { SharedModule } from './shared';
     CoreModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+
+    NgxAgoraModule.forRoot({ AppID: environment.agora.appId }),
   ],
   providers: [
     {

@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 import { SharedModule } from '@app/shared/shared.module';
 import { CoreModule } from '@app/core/core.module';
 import { LoginComponent } from './account/login/login.component';
@@ -15,7 +20,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CallComponent } from './call/call.component';
 
 @NgModule({
-  declarations: [LoginComponent, ProfileComponent, SettingsComponent, DashboardComponent, CallComponent],
+  declarations: [
+    LoginComponent,
+    ProfileComponent,
+    SettingsComponent,
+    DashboardComponent,
+    CallComponent,
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -24,6 +35,11 @@ import { CallComponent } from './call/call.component';
     RouterModule,
     CoreModule,
     SharedModule,
+
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
   ],
   exports: [],
 })
